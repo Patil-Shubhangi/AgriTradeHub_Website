@@ -1,0 +1,85 @@
+    body {
+        background: url("https://th.bing.com/th/id/OIP.h24rTI2FMIUWR582smHxpwHaD9?w=930&h=498&rs=1&pid=ImgDetMain");
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(175, 214, 177, 0.699);
+        background-size: cover;
+        background-position: center;
+        color: #0c0c0c;
+        overflow: hidden;
+    }
+    
+    .slider-container {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://i.pinimg.com/originals/48/f7/05/48f705673c29e97b8b5fd0e23cbcdb1a.jpg');
+    }
+    
+    .slides {
+        display: flex;
+        transition: transform 0.2s ease;
+        width: 500%;
+        background-color: #221e1e9f;
+    }
+    
+    .slide {
+        width: 20%;
+        padding: 40px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        margin: 20px;
+        transform: translateX(0);
+        transition: transform 0.5s ease;
+        display: flex;
+        flex-direction: row-reverse;
+        /* Aligning content to the right */
+    }
+    
+    .slide img {
+        width: 30%;
+        height: 500px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        object-fit: cover;
+        margin-right: 0px;
+    }
+    
+    h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: #0cdcebf8;
+    }
+    
+    h3 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: #0cdcebf8;
+    }
+    
+    p {
+        font-size: 25px;
+        line-height: 1.6;
+        color: #f1ecec;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    ul li {
+        font-size: 25px;
+        line-height: 1.6;
+        color: #ffffff;
+    }
+    
+    strong {
+        font-weight: bold;
+    }

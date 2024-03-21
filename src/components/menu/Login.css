@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 600px;
+    margin: 110px auto 0;
+    /* Adjust top margin to create space for the navbar */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: rgba(39, 39, 39, 0.4);
+    position: relative;
+    /* Ensure relative positioning */
+    z-index: 1;
+    /* Set a higher z-index to ensure it's above the navbar */
+}
+
+.nav {
+    padding: 4cap;
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    line-height: 100px;
+    z-index: 1000;
+    /* Set a higher z-index to ensure it's above the content */
+}
+
+.nav-menu ul {
+    display: flex;
+    background: linear-gradient(to right, #0f850477, #1dd1b93d, transparent);
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+    background: linear-gradient(to right, #0f9e0271, #16cbd141, transparent);
+}
+
+.nav-menu ul li .link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+
+.link:hover,
+.active {
+    border-bottom: 2px solid #fff;
+}
+
+.nav-button .btn {
+    color: black;
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.795);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.658);
+    background: linear-gradient(to right, #07e938c5, #f3ef13be);
+}
+
+#registerBtn {
+    margin-left: 15px;
+}
+
+.btn.white-btn {
+    background: rgba(255, 255, 255, 0.863);
+}
+
+.btn.btn.white-btn:hover {
+    background: rgba(255, 255, 255, 0.74);
+    background: linear-gradient(to right, #45db17d0, #e6da32d7);
+}
+
+.nav-menu-btn {
+    display: none;
+    background: linear-gradient(to right, #45db17d0, #e6da32d7);
+}
+
+.form-box {
+    margin-top: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.login-container {
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.register-container {
+    position: absolute;
+    right: -520px;
+    width: 500px;
+    transition: .5s ease-in-out;
+}
+
+.top span {
+    color: #fff;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top span a {
+    font-weight: 500;
+    color: #0e0303;
+    margin-left: 5px;
+}
+
+.input-box {
+    text-align: center;
+}
+
+header {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    padding: 5px;
+}
+
+.two-forms {
+    display: flex;
+    gap: 10px;
+}
+
+.input-field {
+    font-size: 17px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    border: black;
+    border-radius: 30px;
+    outline: none;
+    transition: .3s ease;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Add margin bottom to create space between input fields */
+}
+
+.input-field:hover,
+.input-field:focus {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+::-webkit-input-placeholder {
+    text-align: left;
+    /* Align placeholder text to the left */
+    color: #fff;
+    text-indent: 20px;
+    /* Add space before the placeholder text */
+}
+
+.input-box i {
+    position: relative;
+    top: -35px;
+    left: 15px;
+    color: #fff;
+}
+
+.submit {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    background-color: #e8f0e8de;
+    transition: .3s ease-in-out;
+}
+
+.submit:hover {
+    background: linear-gradient(to right, #5bd436d0, #e5f31bd7);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.two-col .one {
+    display: flex;
+    gap: 5px;
+}
+
+.two label a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.two label a:hover {
+    text-decoration: underline;
+}
+
+
+/* Add the rest of your CSS styles for the form within this container */
+
+.two label a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 786px) {
+    .nav-button {
+        display: none;
+    }
+    .nav-menu.responsive {
+        top: 100px;
+    }
+    .nav-menu {
+        display: flex;
+    }
+    .nav-menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu-btn {
+        display: block;
+    }
+    .nav-menu-btn i {
+        font-size: 25px;
+        color: #fff;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .nav-menu-btn i:hover {
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .wrapper {
+        min-height: 100vh;
+    }
+    .form-box {
+        width: 100%;
+        height: 500px;
+    }
+    .register-container,
+    .login-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .register-container .two-forms {
+        flex-direction: column;
+        gap: 10;
+    }
+}
